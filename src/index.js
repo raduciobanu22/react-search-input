@@ -15,7 +15,7 @@ class Search extends Component {
   componentWillReceiveProps (nextProps) {
     if (
       typeof nextProps.value !== 'undefined' &&
-      nextProps.value !== this.props.value
+      nextProps.value !== this.state.searchTerm
     ) {
       const e = {
         target: {
